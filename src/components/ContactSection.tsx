@@ -6,11 +6,11 @@ import { Textarea } from "./ui/textarea";
 
 export function ContactSection() {
   return (
-    <section id="contactanos" className="py-20 bg-muted/30">
+    <section id="contactanos" className="py-20" style={{backgroundColor: '#F0C9DB'}}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">Contáctanos</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-4 font-bold" style={{color: '#821C53'}}>Contáctanos</h2>
+          <p className="max-w-3xl mx-auto text-lg" style={{color: '#A43570'}}>
             Estamos aquí para ayudarte. No dudes en contactarnos para cualquier consulta, 
             apoyo o información adicional sobre el Síndrome de Turner.
           </p>

@@ -9,49 +9,64 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-background/90 backdrop-blur-sm border-b border-border z-50">
+    <header className="fixed top-0 w-full backdrop-blur-sm border-b z-50" style={{backgroundColor: 'rgba(240, 201, 219, 0.95)', borderColor: '#CF6D9B'}}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-semibold">ST</span>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{backgroundColor: '#A43570'}}>
+              <span className="text-white font-semibold">ST</span>
             </div>
-            <span className="font-semibold text-lg">Síndrome de Turner</span>
+            <span className="font-semibold text-lg" style={{color: '#821C53'}}>Síndrome de Turner</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('inicio')}
-              className="hover:text-primary"
+              className="font-medium transition-colors"
+              style={{color: '#A43570'}}
+              onMouseEnter={(e) => e.target.style.color = '#821C53'}
+              onMouseLeave={(e) => e.target.style.color = '#A43570'}
             >
               Inicio
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('quienes-somos')}
-              className="hover:text-primary"
+              className="font-medium transition-colors"
+              style={{color: '#A43570'}}
+              onMouseEnter={(e) => e.target.style.color = '#821C53'}
+              onMouseLeave={(e) => e.target.style.color = '#A43570'}
             >
               Quienes Somos
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('informacion')}
-              className="hover:text-primary"
+              className="font-medium transition-colors"
+              style={{color: '#A43570'}}
+              onMouseEnter={(e) => e.target.style.color = '#821C53'}
+              onMouseLeave={(e) => e.target.style.color = '#A43570'}
             >
               Información
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('galeria')}
-              className="hover:text-primary"
+              className="font-medium transition-colors"
+              style={{color: '#A43570'}}
+              onMouseEnter={(e) => e.target.style.color = '#821C53'}
+              onMouseLeave={(e) => e.target.style.color = '#A43570'}
             >
               Galería
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('contactanos')}
-              className="hover:text-primary"
+              className="font-medium transition-colors"
+              style={{color: '#A43570'}}
+              onMouseEnter={(e) => e.target.style.color = '#821C53'}
+              onMouseLeave={(e) => e.target.style.color = '#A43570'}
             >
               Contáctanos
             </Button>

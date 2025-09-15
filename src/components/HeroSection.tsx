@@ -3,21 +3,30 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="inicio" className="min-h-screen flex items-center" style={{background: 'linear-gradient(135deg, #F0C9DB 0%, #CF6D9B 50%, #A43570 100%)'}}>
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl text-primary mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{color: '#821C53'}}>
               Síndrome de Turner
             </h1>
-            <p className="text-xl text-muted-foreground max-w-lg">
+            <p className="text-xl max-w-lg text-white/90 font-medium">
               Información completa, apoyo y recursos para pacientes, familias y profesionales de la salud sobre el síndrome de Turner.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" onClick={() => document.getElementById('informacion')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button 
+                size="lg" 
+                onClick={() => document.getElementById('informacion')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-white text-primary hover:bg-gray-100 font-semibold"
+              >
                 Conoce Más
               </Button>
-              <Button variant="outline" size="lg" onClick={() => document.getElementById('contactanos')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                onClick={() => document.getElementById('contactanos')?.scrollIntoView({ behavior: 'smooth' })}
+                className="border-white text-white hover:bg-white/10 font-semibold"
+              >
                 Obtener Ayuda
               </Button>
             </div>

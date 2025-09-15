@@ -4,11 +4,11 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function InfoSection() {
   return (
-    <section id="informacion" className="py-20 bg-muted/30">
+    <section id="informacion" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">Información sobre el Síndrome de Turner</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-4 font-bold" style={{color: '#821C53'}}>Información sobre el Síndrome de Turner</h2>
+          <p className="max-w-3xl mx-auto text-lg" style={{color: '#A43570'}}>
             El Síndrome de Turner es una condición genética que afecta únicamente a las mujeres, 
             causada por la ausencia completa o parcial de un cromosoma X.
           </p>
@@ -26,8 +26,8 @@ export function InfoSection() {
           </div>
 
           <div>
-            <h3 className="text-2xl mb-6">¿Qué es el Síndrome de Turner?</h3>
-            <p className="text-muted-foreground mb-6">
+            <h3 className="text-2xl mb-6 font-semibold" style={{color: '#821C53'}}>¿Qué es el Síndrome de Turner?</h3>
+            <p className="mb-6" style={{color: '#A43570'}}>
               Es una condición cromosómica que se presenta cuando falta uno de los cromosomas X 
               o cuando uno de ellos está incompleto. Afecta aproximadamente a 1 de cada 2,500 
               nacimientos de niñas.
@@ -35,21 +35,21 @@ export function InfoSection() {
             
             <div className="space-y-4">
               <div className="flex items-start">
-                <span className="bg-primary/10 text-primary px-2 py-1 rounded-md mr-3 mt-1 text-sm">45,X</span>
+                <span className="px-2 py-1 rounded-md mr-3 mt-1 text-sm text-white font-medium" style={{backgroundColor: '#A43570'}}>45,X</span>
                 <div>
-                  <p className="text-sm">Monosomía completa (45% de casos)</p>
+                  <p className="text-sm" style={{color: '#821C53'}}>Monosomía completa (45% de casos)</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <span className="bg-primary/10 text-primary px-2 py-1 rounded-md mr-3 mt-1 text-sm">Mosaico</span>
+                <span className="px-2 py-1 rounded-md mr-3 mt-1 text-sm text-white font-medium" style={{backgroundColor: '#A43570'}}>Mosaico</span>
                 <div>
-                  <p className="text-sm">Algunas células tienen 45,X y otras 46,XX</p>
+                  <p className="text-sm" style={{color: '#821C53'}}>Algunas células tienen 45,X y otras 46,XX</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <span className="bg-primary/10 text-primary px-2 py-1 rounded-md mr-3 mt-1 text-sm">Estructural</span>
+                <span className="px-2 py-1 rounded-md mr-3 mt-1 text-sm text-white font-medium" style={{backgroundColor: '#A43570'}}>Estructural</span>
                 <div>
-                  <p className="text-sm">Un cromosoma X está parcialmente ausente</p>
+                  <p className="text-sm" style={{color: '#821C53'}}>Un cromosoma X está parcialmente ausente</p>
                 </div>
               </div>
             </div>

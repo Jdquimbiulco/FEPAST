@@ -3,11 +3,11 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function AboutSection() {
   return (
-    <section id="quienes-somos" className="py-20 bg-background">
+    <section id="quienes-somos" className="py-20" style={{backgroundColor: '#F0C9DB'}}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-4">Quiénes Somos</h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-4 font-bold" style={{color: '#821C53'}}>Quiénes Somos</h2>
+          <p className="max-w-3xl mx-auto text-lg" style={{color: '#A43570'}}>
             Somos una organización dedicada a brindar información, apoyo y recursos sobre el 
             Síndrome de Turner para pacientes, familias y profesionales de la salud.
           </p>
@@ -15,28 +15,28 @@ export function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-2xl mb-6">Nuestra Misión</h3>
-            <p className="text-muted-foreground mb-6">
+            <h3 className="text-2xl mb-6 font-semibold" style={{color: '#821C53'}}>Nuestra Misión</h3>
+            <p className="mb-6 text-base" style={{color: '#A43570'}}>
               Proporcionar información precisa y actualizada sobre el Síndrome de Turner, 
               conectar a familias con recursos especializados y promover la conciencia 
               sobre esta condición genética para mejorar la calidad de vida de quienes 
               la padecen.
             </p>
-            <ul className="space-y-3 text-muted-foreground">
+            <ul className="space-y-3" style={{color: '#A43570'}}>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
+                <span className="mr-2 font-bold" style={{color: '#821C53'}}>•</span>
                 Educación médica especializada
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
+                <span className="mr-2 font-bold" style={{color: '#821C53'}}>•</span>
                 Apoyo emocional y psicológico
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
+                <span className="mr-2 font-bold" style={{color: '#821C53'}}>•</span>
                 Red de contactos profesionales
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
+                <span className="mr-2 font-bold" style={{color: '#821C53'}}>•</span>
                 Recursos para familias
               </li>
             </ul>
