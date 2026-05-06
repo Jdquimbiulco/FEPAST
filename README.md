@@ -96,6 +96,15 @@ npm run build
 
 ---
 
+## Team
+
+| Role | Name |
+|------|------|
+| Project Lead & Developer | [Juan Diego Quimbiulco](https://github.com/Jdquimbiulco) |
+| Support & DNS Configuration | [Xavier Altamirano](https://github.com/XavierAltamiranoPineda) |
+
+---
+
 ## Impact
 
 This website serves the Ecuadorian Turner Syndrome community — connecting patients, families, and healthcare professionals across the country. It replaced a legacy site and gave FEPAST a modern, maintainable platform they can manage themselves.
